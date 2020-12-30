@@ -11,8 +11,8 @@ const initialState = {
         : [],
     },
 };
-const reducer = combineReducers({})
-const reducer = combineReducer({
+// const reducer = combineReducers({})
+const reducer = combineReducers({
     productList: productListReducer,
     productDetails: productDetailsReducer,
     cart: cartReducer,
