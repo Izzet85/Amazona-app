@@ -4,6 +4,7 @@ import ProductScreen from "./ProductScreen"
 import HomeScreen from "./HomeScreen";
 import CartScreen from "./CartScreen";
 import { useSelector } from "react-redux";
+import SigninScreen from "./SigninScreen";
 
 function App() {
 
@@ -31,8 +32,11 @@ function App() {
         </header>
         <main>
           <Route path="/cart/id?" componenet={CartScreen}></Route>
-          <Route path="/" component={HomeScreen} exact></Route>
           <Route path="/Product/:id" component={ProductScreen}></Route>
+          <Route path="/signin" component={SigninScreen} exact></Route>
+           <Route path="/" component={HomeScreen} exact></Route>
+
+
         </main>
 
         <footer className="row center">All right reserved</footer>
